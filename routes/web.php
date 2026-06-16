@@ -71,6 +71,6 @@ Route::get('/menu/{id}/edit', [MenuController::class, 'edit'])->name('menu.edit'
 Route::delete('/menu/{id}', [MenuController::class, 'destroy'])->name('menu.destroy');
 
 // Rute untuk memproses pembaruan data menu yang diedit
-Route::put('/menu/{id}/edit', [MenuController::class, 'update'])->name('menu.edit');
+Route::put('/menu/{id}', [MenuController::class, 'update'])->name('menu.update');
 
 });
